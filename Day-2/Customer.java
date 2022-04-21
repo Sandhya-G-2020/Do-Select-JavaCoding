@@ -1,6 +1,5 @@
 package definedexception;
 
-//import java.util.Collections;
 
 public class Customer {
 	String name;
@@ -27,10 +26,6 @@ public class Customer {
 				dig = dig / 10;
 			}
 			int n=(int)dig;
-			
-				//String result = name + String.join("", Collections.nCopies(n, "#"));
-			
-				//return result;
 			
 			StringBuilder s = new StringBuilder(name);
 		    for(int i=0; i<n; i++){
