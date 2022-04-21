@@ -48,11 +48,7 @@ class Source{
 	}
 	
 	public String ValidateUserId(Student std) throws InvalidStudentNameException {
-		//char c = std.StudentID.charAt(0);
-		/*if(!(Character.isUpperCase(std.StudentID.charAt(0)) && 
-				std.StudentID.substring(1).equals(std.StudentID.substring(1).toLowerCase()) 
-				&& std.StudentID.length()>=5 && std.StudentID.length()<=20 && Character.isAlphabetic(c)
-						&& std.StudentID.matches("^[A-Z]\\w{4, 19}$")))*/
+		
 		if(!(std.StudentID.matches("^[A-Z]\\w{4,19}$") && 
 				std.StudentID.substring(1).equals(std.StudentID.substring(1).toLowerCase()))) {
 			try{
